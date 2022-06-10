@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "counties",
+  "info": {
+    "name": "county",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "created_at",
+      "published_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "townships": {
+      "collection": "township"
+    }
+  }
+}

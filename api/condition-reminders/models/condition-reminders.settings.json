@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "condition_reminders",
+  "info": {
+    "name": "ConditionReminders",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "datetime": {
+      "type": "string",
+      "required": true
+    },
+    "profile": {
+      "model": "profile"
+    },
+    "condition": {
+      "model": "conditions"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "packages",
+  "info": {
+    "name": "package",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "created_at",
+      "published_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "relevant_years": {
+      "type": "string"
+    },
+    "range": {
+      "type": "string"
+    },
+    "requirements": {
+      "type": "json"
+    },
+    "rules": {
+      "type": "json"
+    },
+    "townships": {
+      "via": "packages",
+      "collection": "township",
+      "dominant": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "value": {
+      "type": "biginteger"
+    },
+    "required_documents": {
+      "type": "json"
+    },
+    "preconditions": {
+      "type": "json"
+    },
+    "post_production": {
+      "type": "text",
+      "required": false
+    },
+    "deadline": {
+      "type": "date",
+      "required": false
+    },
+    "support_category": {
+      "type": "enumeration",
+      "enum": [
+        "CULTIVATION",
+        "ANIMAL_HUSBANDRY"
+      ],
+      "required": false
+    },
+    "conditions": {
+      "type": "json"
+    }
+  }
+}

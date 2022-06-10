@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "active_packages",
+  "info": {
+    "name": "ActivePackage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "package": {
+      "model": "packages"
+    },
+    "fields": {
+      "collection": "field"
+    },
+    "profile": {
+      "model": "profile"
+    }
+  }
+}

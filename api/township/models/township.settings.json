@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "townships",
+  "info": {
+    "name": "township",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "created_at",
+      "published_at",
+      "updated_at"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "packages": {
+      "via": "townships",
+      "private": true,
+      "collection": "packages"
+    }
+  }
+}

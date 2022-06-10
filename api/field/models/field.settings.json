@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fields",
+  "info": {
+    "name": "Field",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "size": {
+      "type": "float"
+    },
+    "profile": {
+      "model": "profile"
+    },
+    "unit_type": {
+      "type": "string"
+    },
+    "field_type": {
+      "type": "string"
+    },
+    "cultivated_plant": {
+      "type": "string"
+    }
+  }
+}

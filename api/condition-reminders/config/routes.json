@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/condition-reminders",
+      "handler": "condition-reminders.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/condition-reminders/count",
+      "handler": "condition-reminders.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/condition-reminders/:id",
+      "handler": "condition-reminders.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/condition-reminders",
+      "handler": "condition-reminders.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/condition-reminders/:id",
+      "handler": "condition-reminders.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/condition-reminders/:id",
+      "handler": "condition-reminders.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

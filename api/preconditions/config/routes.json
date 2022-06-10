@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/preconditions",
+      "handler": "preconditions.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/preconditions/count",
+      "handler": "preconditions.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/preconditions/:id",
+      "handler": "preconditions.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/preconditions",
+      "handler": "preconditions.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/preconditions/:id",
+      "handler": "preconditions.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/preconditions/:id",
+      "handler": "preconditions.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

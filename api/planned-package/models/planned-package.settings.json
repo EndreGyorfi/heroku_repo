@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "planned_packages",
+  "info": {
+    "name": "plannedPackage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "package": {
+      "private": true,
+      "model": "packages"
+    },
+    "fields": {
+      "private": true,
+      "collection": "field"
+    },
+    "profile": {
+      "model": "profile"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/journal-records",
+      "handler": "journal-record.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/journal-records/count",
+      "handler": "journal-record.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/journal-records/:id",
+      "handler": "journal-record.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/journal-records",
+      "handler": "journal-record.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/journal-records/:id",
+      "handler": "journal-record.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/journal-records/:id",
+      "handler": "journal-record.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

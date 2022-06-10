@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conditions",
+  "info": {
+    "name": "Conditions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "active_package": {
+      "model": "active-package"
+    },
+    "profile": {
+      "model": "profile"
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "startDate": {
+      "type": "string",
+      "required": true
+    },
+    "endDate": {
+      "type": "string",
+      "required": true
+    },
+    "finished": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

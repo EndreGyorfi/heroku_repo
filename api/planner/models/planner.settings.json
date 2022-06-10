@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "planners",
+  "info": {
+    "name": "planner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "planned_packages": {
+      "collection": "planned-package"
+    },
+    "profile": {
+      "model": "profile"
+    }
+  }
+}

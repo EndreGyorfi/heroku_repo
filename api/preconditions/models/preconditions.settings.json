@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "preconditions",
+  "info": {
+    "name": "Preconditions",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "planned_package": {
+      "private": true,
+      "model": "planned-package"
+    },
+    "profile": {
+      "private": true,
+      "model": "profile"
+    },
+    "finished": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

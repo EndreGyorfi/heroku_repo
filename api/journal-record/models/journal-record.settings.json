@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "journal_records",
+  "info": {
+    "name": "JournalRecord"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data1": {
+      "type": "string"
+    },
+    "data2": {
+      "type": "string"
+    },
+    "data3": {
+      "type": "string"
+    },
+    "data4": {
+      "type": "string"
+    },
+    "data5": {
+      "type": "string"
+    },
+    "data6": {
+      "type": "string"
+    },
+    "data7": {
+      "type": "string"
+    },
+    "data8": {
+      "type": "string"
+    },
+    "data9": {
+      "type": "string"
+    },
+    "data10": {
+      "type": "string"
+    },
+    "data11": {
+      "type": "string"
+    },
+    "data12": {
+      "type": "string"
+    },
+    "data13": {
+      "type": "string"
+    },
+    "data14": {
+      "type": "string"
+    },
+    "data15": {
+      "type": "string"
+    },
+    "data16": {
+      "type": "string"
+    }
+  }
+}
